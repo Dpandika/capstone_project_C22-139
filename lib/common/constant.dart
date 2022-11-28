@@ -6,11 +6,11 @@ import 'package:google_fonts/google_fonts.dart';
     //'https://';
 
 // colors
-const Color kBlack = Color(0xFF000814);
-const Color kPrime = Color(0xff3F3D56);
-const Color kSecondary = Color(0xFF9E035D);
-const Color kSkyBlue = Color(0xFFF2F5FD);
-const Color kGrey = Color(0xFF303030);
+const Color kBlack = Color(0xFF1E1E1E);
+const Color kPrime = Color(0xffFFC801);
+const Color kSecondary = Color(0xFFD49D02);
+const Color kBrown = Color(0xFF3B1F10);
+const Color kGrey = Color(0xFFF2F5FD);
 const Color kWhite = Color(0xffFFFFFF);
 
 // text style

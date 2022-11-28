@@ -41,6 +41,8 @@ dependencies:
   provider: ^6.0.4
   shared_preferences: ^2.0.15
   google_fonts: ^3.0.1
+  animated_text_kit: ^4.2.2
+  lottie: ^1.4.2
 
 dev_dependencies:
   flutter_test:
@@ -54,7 +56,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/langs/
+    - assets/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

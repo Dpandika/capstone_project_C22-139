@@ -1,9 +1,14 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:capstone_project/pages/home_page.dart';
 import 'package:capstone_project/pages/menu_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:capstone_project/common/constant.dart';
 
 class MainDrawer extends StatefulWidget {
+  static const ROUTE_NAME = '/main-drawer';
+
   const MainDrawer({Key? key}) : super(key: key);
 
   @override
@@ -25,8 +30,8 @@ class _MainDrawerState extends State<MainDrawer> {
         }
       ),
       mainScreen: page,
-      drawerShadowsBackgroundColor: Colors.grey,
-      menuBackgroundColor: Colors.indigo,
+      drawerShadowsBackgroundColor: kGrey,
+      menuBackgroundColor: kPrime,
       borderRadius: 24,
       showShadow: true,
     );
