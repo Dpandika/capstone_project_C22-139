@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:capstone_project/pages/mental_page.dart';
-import 'package:capstone_project/pages/home_page.dart';
-import 'package:capstone_project/pages/settings_page.dart';
+import 'package:capstone_project/pages/stress_page.dart';
+import 'package:capstone_project/pages/overthinking_page.dart';
 import 'package:capstone_project/pages/about_page.dart';
 import 'package:capstone_project/pages/articles_page.dart';
 import 'package:capstone_project/pages/diary_page.dart';
@@ -18,12 +18,12 @@ class MenuPage extends StatelessWidget {
   final Function(Widget) onPageChanged;
 
   List<MenuItems> drawerItems = [
-    const MenuItems(Icon(Icons.home), Text('Home'), HomePage()),
     const MenuItems(Icon(Icons.accessibility), Text('Mental Test'), MentalPage()),
+    const MenuItems(Icon(Icons.add_reaction), Text('Stress Test'), StressPage()),
+    const MenuItems(Icon(Icons.emoji_objects), Text('Overthinking Test'), OverthinkingPage()),
     const MenuItems(Icon(Icons.article), Text('Articles'), ArticlesPage()),
     const MenuItems(Icon(Icons.assignment), Text('Diary'), DiaryPage()),
     const MenuItems(Icon(Icons.campaign), Text('About'), AboutPage()),
-    const MenuItems(Icon(Icons.settings), Text('Settings'), SettingPage()),
   ];
 
   @override
@@ -37,10 +37,14 @@ class MenuPage extends StatelessWidget {
             scrollDirection: Axis.vertical,
             physics: const BouncingScrollPhysics(),
             children: [
-              const SizedBox(height: 10),
+              const SizedBox(height: 30),
               SizedBox(
-                width: 10,
-                child: Image.asset('assets/logo.png'),
+                width: 100,
+                child: Image.asset(
+                  'assets/logo.png',
+                  width: 100,
+                  height: 100,
+                ),
               ),
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
@@ -57,7 +61,8 @@ class MenuPage extends StatelessWidget {
                   "MENTAL KITA",
                   style: kHeading5.copyWith(
                     fontSize: 18,
-                    color: kWhite,letterSpacing: 3,
+                    color: kWhite,
+                    letterSpacing: 3,
                   ),
                 ),
               ),
@@ -74,6 +79,18 @@ class MenuPage extends StatelessWidget {
                   textColor: kBrown,
                 )).toList(),
               ),
+              const SizedBox(height: 50),
+              Container(
+                padding: const EdgeInsets.only(left: 20, top: 0, right: 0, bottom: 20),
+                child: Text(
+                  "App Version 1.0",
+                  style: overline.copyWith(
+                    fontSize: 12,
+                    color: kBrown,
+                    letterSpacing: 1,
+                  ),
+                ),
+              )
             ],
           ),
         )

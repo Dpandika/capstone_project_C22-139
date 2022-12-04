@@ -17,7 +17,7 @@ const Color kWhite = Color(0xffFFFFFF);
 final TextStyle kHeading3 = GoogleFonts.poppins(
   fontSize: 32,
   fontWeight: FontWeight.w600,
-  color: kBlack,
+  color: kSecondary,
 );
 final TextStyle kHeading4 = GoogleFonts.poppins(
   fontSize: 28,
@@ -31,7 +31,6 @@ final TextStyle kHeading5 = GoogleFonts.poppins(
 );
 final TextStyle kHeading6 = GoogleFonts.poppins(
   fontSize: 19,
-  fontWeight: FontWeight.w500,
   letterSpacing: 0.15,
   color: kBlack,
 );

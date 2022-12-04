@@ -1,13 +1,13 @@
 // ignore_for_file: constant_identifier_names
 
-import 'package:capstone_project/pages/tes_mental/mental_test.dart';
+import 'package:capstone_project/pages/tes_stress/stress_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:capstone_project/common/constant.dart';
 
-class MentalPage extends StatelessWidget {
-  static const ROUTE_NAME = '/mental-page';
-  const MentalPage({Key? key}) : super(key: key);
+class StressPage extends StatelessWidget {
+  static const ROUTE_NAME = '/home-page';
+  const StressPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MentalPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: kBrown,
         title: const Text(
-          'MENTAL TEST',
+          'STRESS TEST',
           style: TextStyle(
             color: kWhite,
           ),
@@ -71,7 +71,7 @@ class MentalPage extends StatelessWidget {
                     ),
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return MentalTest();
+                        return StressTest();
                       }));
                     },
                   ),

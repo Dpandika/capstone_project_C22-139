@@ -1,6 +1,6 @@
 // ignore_for_file: constant_identifier_names
 
-import 'package:capstone_project/pages/home_page.dart';
+import 'package:capstone_project/pages/mental_page.dart';
 import 'package:capstone_project/pages/menu_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
@@ -16,7 +16,7 @@ class MainDrawer extends StatefulWidget {
 }
 
 class _MainDrawerState extends State<MainDrawer> {
-  Widget page = const HomePage();
+  Widget page = const MentalPage();
   @override
   Widget build(BuildContext context) {
     return ZoomDrawer(

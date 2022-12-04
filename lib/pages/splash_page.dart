@@ -4,7 +4,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:capstone_project/common/constant.dart';
 import 'package:capstone_project/widgets/main_drawer.dart';
-import 'package:capstone_project/pages/home_page.dart';
 
 class SplashPage extends StatefulWidget {
 
@@ -38,7 +37,7 @@ class _SplashPageState extends State<SplashPage> {
                 width: 200,
                 child: Image.asset('assets/logo.png'),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Center(
                 child: Container(
                   padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 40),

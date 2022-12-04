@@ -3,10 +3,9 @@
 import 'package:capstone_project/pages/about_page.dart';
 import 'package:capstone_project/pages/articles_page.dart';
 import 'package:capstone_project/pages/diary_page.dart';
-import 'package:capstone_project/pages/home_page.dart';
+import 'package:capstone_project/pages/stress_page.dart';
 import 'package:capstone_project/pages/mental_page.dart';
-import 'package:capstone_project/pages/menu_page.dart';
-import 'package:capstone_project/pages/settings_page.dart';
+import 'package:capstone_project/pages/overthinking_page.dart';
 import 'package:capstone_project/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +19,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of your application .
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,9 +34,9 @@ class MyApp extends StatelessWidget {
       home: const SplashPage(),
       onGenerateRoute: (RouteSettings settings) {
         switch (settings.name) {
-          case HomePage.ROUTE_NAME:
+          case StressPage.ROUTE_NAME:
             return MaterialPageRoute(
-              builder: (_) => const HomePage(),
+              builder: (_) => const StressPage(),
             );
           case MentalPage.ROUTE_NAME:
             return MaterialPageRoute(
@@ -55,9 +54,9 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(
               builder: (_) => const AboutPage(),
             );
-          case SettingPage.ROUTE_NAME:
+          case OverthinkingPage.ROUTE_NAME:
             return MaterialPageRoute(
-              builder: (_) => const SettingPage(),
+              builder: (_) => const OverthinkingPage(),
             );
           case MainDrawer.ROUTE_NAME:
             return MaterialPageRoute(
