@@ -3,10 +3,10 @@
 import 'package:capstone_project/common/constant.dart';
 import 'package:flutter/material.dart';
 
-class Question extends StatelessWidget {
+class MentalQuestion extends StatelessWidget {
   final String questionText;
 
-  Question(this.questionText);
+  MentalQuestion(this.questionText);
 
   @override
   Widget build(BuildContext context) {

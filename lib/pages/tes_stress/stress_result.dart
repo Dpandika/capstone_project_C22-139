@@ -12,13 +12,13 @@ class StressResult extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore <= 15) {
-      resultText = '10%. Keadaan Kamu Baik';
+      resultText = '10%. Keadaanmu sangat baik';
     } else if (resultScore <= 50) {
-      resultText = '50%. Keadaan Kamu Tertekan';
+      resultText = '30%. Tingkat stressmu rendah';
     } else if (resultScore <= 80) {
-      resultText = '80%. Keaddaan Kamu Depresi';
+      resultText = '60%. Tingakt stressmu cukup tinggi';
     } else {
-      resultText = '90%. Kamu butuh Dokter';
+      resultText = '90%. Tingkat strssmu sangat tinggi. Segera ke Psikiater!';
     }
     return resultText;
   }
@@ -43,7 +43,7 @@ class StressResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      "Tingkat Kesehatan Mental:",
+                      "Tingkat Stress:",
                       style: kHeading3.copyWith(
                         fontSize: 18,
                         color: kBlack,
@@ -59,7 +59,7 @@ class StressResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      'Mesikupun kamu memilki beban di hidupmu, namun kamu masih dapat mengatasinya. Kamu juga bisa berkegiatan seperti biasa dan merasa punya kendali dalam hidupmu.',
+                      'Meskipun tidak atau ada beban kamu harus tetap semangat dalam menjalani kehidupanmu.',
                       style: kBodyText.copyWith(
                         color: kBlack,
                       ),
@@ -67,7 +67,7 @@ class StressResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      'Penasaran mengapa kondisimu sekarang sedang baik-baik saja?',
+                      'Temukanlah tujuan yang mendalam dalam dirimu dan coba capai tujuan tersebut!',
                       style: kBodyText.copyWith(
                         color: kBlack,
                       ),
@@ -75,7 +75,7 @@ class StressResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      'Yuk, cari tau lebih lanjut mengenai apa arti dari hasil test yang kamu miliki dan bagaimana kamu bisa menjaga kesehatan mentalmu!',
+                      'Yuk, cari tau lebih lanjut mengenai apa arti dari hasil test yang kamu miliki dan bagaimana kamu bisa menjaga kesehatan mentalmu dan mengelolah stressmu!',
                       style: kBodyText.copyWith(
                         color: kBlack,
                       ),

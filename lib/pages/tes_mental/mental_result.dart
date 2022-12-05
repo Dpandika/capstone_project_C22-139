@@ -18,7 +18,7 @@ class Result extends StatelessWidget {
     } else if (resultScore <= 80) {
       resultText = '80%. Keaddaan Kamu Depresi';
     } else {
-      resultText = '90%. Kamu butuh Dokter';
+      resultText = '90%. Keadaaan Kamu Mengkwatirkan. Segara ke Psikiater';
     }
     return resultText;
   }

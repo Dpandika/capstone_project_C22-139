@@ -4,7 +4,6 @@ import 'package:capstone_project/common/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:capstone_project/pages/tes_mental/mental_quiz.dart';
 import 'package:capstone_project/pages/tes_mental/mental_result.dart';
-import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 
 class MentalTest extends StatefulWidget {
   //const MentalTest({Key? key}) : super(key: key);

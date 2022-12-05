@@ -40,12 +40,12 @@ class StressPage extends StatelessWidget {
                 Center(
                   child: SizedBox(
                     width: 200,
-                    child: Image.asset('assets/image1.png'),
+                    child: Image.asset('assets/image2.png'),
                   ),
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "Tes Sehat Mental",
+                  "Tes Tinkat Stress",
                   //textAlign: TextAlign.left,
                   style: kHeading3.copyWith(
                     fontSize: 20,
@@ -53,7 +53,7 @@ class StressPage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Bagaimana kabarmu akhir-akhir ini? Cek kondisi kesehatan mentalmu yuk!",
+                  "Tes ini bisa mengukur tingkat stress dalam dirimu. Hasil dari tes ini akan sangat membantu kamu mengetahui keadaan kesehatan mentalmu saat ini!",
                   textAlign: TextAlign.left,
                   style: kBodyText.copyWith(
                   ),

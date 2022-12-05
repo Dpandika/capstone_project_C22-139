@@ -41,12 +41,12 @@ class OverthinkingPage extends StatelessWidget {
                 Center(
                   child: SizedBox(
                     width: 200,
-                    child: Image.asset('assets/image1.png'),
+                    child: Image.asset('assets/image3.png'),
                   ),
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "Tes Sehat Mental",
+                  "Tes Overthinking",
                   //textAlign: TextAlign.left,
                   style: kHeading3.copyWith(
                     fontSize: 20,
@@ -54,7 +54,7 @@ class OverthinkingPage extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Bagaimana kabarmu akhir-akhir ini? Cek kondisi kesehatan mentalmu yuk!",
+                  "Bagaimana kabarmu akhir-akhir ini? Cek kondisi pikiranmu yuk!",
                   textAlign: TextAlign.left,
                   style: kBodyText.copyWith(
                   ),

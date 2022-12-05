@@ -3,11 +3,11 @@
 import 'package:capstone_project/common/constant.dart';
 import 'package:flutter/material.dart';
 
-class Answer extends StatelessWidget {
+class MentalAnswer extends StatelessWidget {
   final VoidCallback selectHandler;
   final String answerText;
 
-  Answer(this.selectHandler, String this.answerText);
+  MentalAnswer(this.selectHandler, String this.answerText);
 
   @override
   Widget build(BuildContext context) {

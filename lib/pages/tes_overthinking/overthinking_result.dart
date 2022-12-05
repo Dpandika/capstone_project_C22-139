@@ -12,13 +12,13 @@ class OverthinkingResult extends StatelessWidget {
   String get resultPhrase {
     String resultText;
     if (resultScore <= 15) {
-      resultText = '10%. Keadaan Kamu Baik';
+      resultText = '10%. Kondisi fikiranmu sangat rendah';
     } else if (resultScore <= 50) {
-      resultText = '50%. Keadaan Kamu Tertekan';
+      resultText = '50%. Kondisi fikiranmu rendah';
     } else if (resultScore <= 80) {
-      resultText = '80%. Keaddaan Kamu Depresi';
+      resultText = '80%. Kondisi fikiranmu tinggi';
     } else {
-      resultText = '90%. Kamu butuh Dokter';
+      resultText = '90%. Kondisi fikiranmu sangat tinggi';
     }
     return resultText;
   }
@@ -43,7 +43,7 @@ class OverthinkingResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      "Tingkat Kesehatan Mental:",
+                      "Interpretasi Overthinkingmu:",
                       style: kHeading3.copyWith(
                         fontSize: 18,
                         color: kBlack,
@@ -59,7 +59,15 @@ class OverthinkingResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      'Mesikupun kamu memilki beban di hidupmu, namun kamu masih dapat mengatasinya. Kamu juga bisa berkegiatan seperti biasa dan merasa punya kendali dalam hidupmu.',
+                      'Keterangan Score:',
+                      style: kBodyText.copyWith(
+                        color: kSecondary,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 5),
+                    Text(
+                      'Rendah dan Sangat Rendah => Kamu dapat mengendalikan pikiran-pikiran negatifmu dengan baik. Kamu teidak terlalu fokus pada kejadian dan perasaan negatif yang pernah kamu alami untuk terus bisa mengendalikan pikiranmu, kamu bisa mendiskusikannya dengan para orang terdekatmu.',
                       style: kBodyText.copyWith(
                         color: kBlack,
                       ),
@@ -67,15 +75,7 @@ class OverthinkingResult extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      'Penasaran mengapa kondisimu sekarang sedang baik-baik saja?',
-                      style: kBodyText.copyWith(
-                        color: kBlack,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 5),
-                    Text(
-                      'Yuk, cari tau lebih lanjut mengenai apa arti dari hasil test yang kamu miliki dan bagaimana kamu bisa menjaga kesehatan mentalmu!',
+                      'Tinggi dan Sangat Tinggi => Kamu memikirkan hal negatif secara berulang. Kamu juga tidak dapat mengendalikan hal tersebut. Kamu teralu fokus pada kejadian dan perasaan negatif yang peranh kamu alami. Hal ini yang terkadang membuat kamu sulit beraktivitas sehari-hari. Kamu bisa mendisiskusikannya kepada Psikiater.',
                       style: kBodyText.copyWith(
                         color: kBlack,
                       ),
