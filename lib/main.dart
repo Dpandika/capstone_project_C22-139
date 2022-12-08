@@ -10,7 +10,6 @@ import 'package:capstone_project/presentation/pages/overthinking_page.dart';
 import 'package:capstone_project/presentation/widgets/main_drawer.dart';
 import 'package:capstone_project/presentation/pages/splash_page.dart';
 import 'package:capstone_project/common/constant.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
