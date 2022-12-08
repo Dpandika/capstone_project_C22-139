@@ -6,8 +6,7 @@ import 'package:capstone_project/presentation/pages/mental_page.dart';
 import 'package:capstone_project/presentation/pages/stress_page.dart';
 import 'package:capstone_project/presentation/pages/overthinking_page.dart';
 import 'package:capstone_project/presentation/pages/about_page.dart';
-import 'package:capstone_project/presentation/pages/articles_page.dart';
-import 'package:capstone_project/presentation/pages/diary_page.dart';
+import 'package:capstone_project/presentation/pages/article_page/articles_page.dart';
 import 'package:capstone_project/presentation/widgets/menu_items.dart';
 import 'package:capstone_project/common/constant.dart';
 
@@ -22,7 +21,6 @@ class MenuPage extends StatelessWidget {
     const MenuItems(Icon(Icons.add_reaction), Text('Stress Test'), StressPage()),
     const MenuItems(Icon(Icons.emoji_objects), Text('Overthinking Test'), OverthinkingPage()),
     const MenuItems(Icon(Icons.article), Text('Articles'), ArticlesPage()),
-    const MenuItems(Icon(Icons.assignment), Text('Diary'), DiaryPage()),
     const MenuItems(Icon(Icons.campaign), Text('About'), AboutPage()),
   ];
 

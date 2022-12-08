@@ -1,6 +1,6 @@
 import 'package:capstone_project/common/constant.dart';
 import 'package:capstone_project/data/model/article.dart';
-import 'package:capstone_project/pages/article_page/custom_scaffold.dart';
+import 'package:capstone_project/presentation/pages/article_page/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:webview_flutter/webview_flutter.dart';

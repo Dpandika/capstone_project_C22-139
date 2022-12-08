@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:capstone_project/data/model/article.dart';
-import 'package:capstone_project/pages/article_page/article_detail_page.dart';
+import 'package:capstone_project/presentation/pages/article_page/article_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:capstone_project/common/constant.dart';
